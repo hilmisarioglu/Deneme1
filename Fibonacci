@@ -1,0 +1,13 @@
+x = 0
+y = 1
+z = x + y
+liste = [z]
+for i in range(10):
+   if z < 55:
+      z = x+y
+      liste.append(z)
+      x = y
+      y = z
+   else :
+      break
+print(liste)
