@@ -1,0 +1,19 @@
+print 'Multiplikation Addition'
+ 
+while True:
+    try:
+        x = int(raw_input('Zahl 1:  '))
+        y = int(raw_input('Zahl 2:  '))
+        break
+    except:
+        print 'Bitte Zahlen nochmalig eingeben.'
+ 
+u = 0
+# Um die die Anzahl der Schleifen minimal zu halten.
+if x >= y:
+    for i in range(y):
+        u = u + x
+else:
+    for i in range(x):
+        u = u + y
+print 'Produkt: ', u
