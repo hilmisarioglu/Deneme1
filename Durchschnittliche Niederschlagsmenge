@@ -1,0 +1,8 @@
+april = 12
+mai = 14
+juni = 8
+durchschnitt =(april+mai+juni)/3
+print("Niederschlag im April: ", april)
+print("Niederschlag im Mai  : ", mai)
+print("Niederschlag im Juni : ", juni)
+print("Durchschnitt:          ", durchschnitt)
