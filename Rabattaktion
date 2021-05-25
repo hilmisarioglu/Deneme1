@@ -1,0 +1,7 @@
+gesamtbeitrag = int(input("Geben Sie den Gesambetrag ein: \n" ))
+if gesamtbeitrag > 1000:
+    discountpreis = gesamtbeitrag * 0.90
+    print ("Discountpreis: ", int(discountpreis))
+else:
+    discountpreis = gesamtbeitrag
+    print ("Discountpreis: ", int(discountpreis))  
