@@ -1,0 +1,14 @@
+def minima_maxima(x):
+    mini = min(x)
+    maxi = max(x)
+    return (mini, maxi)
+             
+x = [34,23,567,1]
+(mini, maxi) = minima_maxima(x)
+print "Minimum: " + str(mini) 
+print "Maximum: " + str(maxi)
+ 
+x = [2342,456,657,234,543]
+(mini, maxi) = minima_maxima(x)
+print "Minimum: " + str(mini) 
+print "Maximum: " + str(maxi)
