@@ -1,0 +1,26 @@
+import string
+ 
+liste = []
+klein = string.ascii_lowercase
+gross = string.ascii_uppercase
+ 
+wort = input("Text: ")
+verschiebung = int(input("Verschiebung: "))
+ 
+for i in range(len(wort)):
+    if wort[i] in klein:
+        index = klein.find(wort[i])
+        umwandlung = klein[(index + verschiebung)%26]
+        liste.append(umwandlung)
+ 
+    elif wort[i] in gross:
+        index = gross.find(wort[i])
+        umwandlung = gross[(index + verschiebung)%26]
+        liste.append(umwandlung)
+         
+    else:
+        liste.append(wort[i])
+ 
+chiffre = ''.join(liste[i] for i in range(len(liste)))
+ 
+print("Ergebnis:", chiffre)
